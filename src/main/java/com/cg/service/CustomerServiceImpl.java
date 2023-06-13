@@ -35,7 +35,7 @@ public class CustomerServiceImpl implements CustomerSerivce {
 	public Customer updateCustomer(Customer customer) {
 		// TODO Auto-generated method stub
 		return repo.save(customer);
-		;
+		
 	}
 
 	@Override
