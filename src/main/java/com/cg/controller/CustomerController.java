@@ -27,11 +27,8 @@ public class CustomerController {
 
 	@GetMapping("/customer/{id}")
 	public Optional<Customer> getById(@PathVariable("id") int id) {
-
 		return Optional.of(service.getById(id).orElseThrow(() -> new CustomerNotFoundException(id)));
 	}
 	
 	
-	
-
 }
